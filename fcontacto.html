@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulario | UNH 2023</title>
+</head>
+<body bgcolor="#96CFD8">
+    <p></p>
+    <a href="index.html">INICIO ||</a>
+    <a href="vpresentacion.html" target="_blank">VIDEO DE PRESENTACION ||</a>
+    <a href="fcontacto.html">FORMULARIO DE CONTACTO||</a>
+    <a href="cv.html"target="_blank">CORRICULUM VITAE</a>
+    
+        <h3 align="center"><font color="#C70039" size="4" > FORMULARIO DE CONTACTO</font></h3>
+        <table border="1" width="100%"style="border-collapse: collapse; border-width: 2px;"cellpadding="20" >
+            <tr align="center" valign="middle"> 
+            <td>
+                 <form action="respuesta.php" method="POST"><!--
+                1-post,METODO PARA ENVIAR DATO
+                2-GET,METODO PARA OBTNER PETICIONES-->
+                <label for="post-name">Ingrese su nombre:</label>
+                <input type="text" name="txtNombre" id="post-name"><br><br>
+                <label for="post-name">Ingrese su correo:</label>
+                <input id="post-name" type="text" name="txtCorreo">
+                    <br>
+                    <hr style="width: 30%;height: 1px; background-color: #C70039;">
+                    <p>Seleccione su facultad:
+                        <select name= "SeleccionaFacul">
+                            <option>FIES</option>
+                            <option>EDUCACION</option>
+                            <option selected>CIENCIAS DE LA SALUD</option>
+                            <option>ENFERMERIAt</option>
+                            <option>EMPRESARIALES</option>
+                            <option>AGRARIAS</option>
+                            <option> INGENIERIA DE MINAS -CIVIL</option>
+                            <option>CIENCIAS DE INGENIERIA</option>
+                            <option>DERECHO Y CIENCIAS POLITICAS</option>
+                          </select>
+                    </p>
+                    <hr style="width: 30%;height: 1px; background-color: #C70039;">
+                    <!--            opcion seleccionar sexo: -->
+                    <p>Sexo:<!--Usar RadioButton--> <br>
+                            <input type="radio" id="html" name="rbGenero" value="femenino">Mujer <br>
+                            <input type="radio" id="html" name="rbGenero" value="masculino">Varón
+           
+                    </p>
+                    <hr style="width: 30%;height: 1px; background-color: #C70039;">
+                    <!--            opcion seleccionar los deportes que se practica: -->
+                     <P>
+                            Seleccione deporte que practicas: <br>
+                              <input type="checkbox" name="casillaA">Ajedrez <br>
+                            <input type="checkbox" name="casillaF">Futbol <br>
+                            <input type="checkbox" name="casillaV">Voley <br>
+                            <input type="checkbox" name="casillaB">Basquet
+                     </P>
+                     <hr style="width: 30%;height: 1px; background-color:#C70039;">
+                      <input type="submit" value="Enviar">
+                     </form>
+             </td>
+            </tr>
+            </table>
+            
+            
+        <br>
+        <br>
+<hr>
+
+<footer>
+    <br>
+    <br>
+    <p>&copy; 2023 Joel Mendoza Taype. Todos los derechos reservados. </p>
+</footer>
+</body>
+</html>
